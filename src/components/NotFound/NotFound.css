@@ -1,0 +1,11 @@
+.NotFound {
+  width: 100%;
+  min-height: 80vh;
+  background-image: url("../../assets/picture/LightError404.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#dark .NotFound {
+  background-image: url("../../assets/picture/DarkError404.gif");
+}

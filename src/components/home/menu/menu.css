@@ -1,0 +1,36 @@
+#mobileMenu {
+  overflow: hidden;
+  font-family: "central_bold";
+  z-index: 70;
+  background: #89D7D4;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+#mobileMenu li {
+  cursor: pointer;
+}
+.icon {
+  font-size: 1.5rem;
+}
+.nav-item {
+  padding: 0.3rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: royalblue;
+}
+.opacity h6 {
+  opacity: 0;
+}
+
+/* ! desktop menu css */
+.desktop-nav-item {
+  display: flex;
+  align-items: baseline;
+  text-decoration: none;
+  color: gray;
+}

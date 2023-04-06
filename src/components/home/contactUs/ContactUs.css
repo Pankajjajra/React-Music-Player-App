@@ -1,0 +1,113 @@
+.contactUsContainer {
+  padding-top: 2rem;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.rtlStyle .input_group label {
+  right: -12rem;
+}
+.form {
+  color: rgb(97, 18, 97);
+  font-family: vazir;
+  background: #8482913f;
+  max-width: 40rem;
+  max-height: 30rem;
+  backdrop-filter: blur(1rem);
+  z-index: 10;
+  padding: 2rem 2rem;
+  overflow: hidden;
+  position: relative;
+}
+.form::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -70%;
+  top: 0;
+  background: rgba(124, 105, 148, 0.094);
+  pointer-events: none;
+  transform: skewX(-18deg);
+  z-index: 9;
+}
+.input_group {
+  flex-basis: 50%;
+  position: relative;
+}
+.input_group input,
+.input_group textarea {
+  border: none;
+  background-color: transparent;
+  border-bottom: 0.1rem solid royalblue;
+  outline: none;
+  color: royalblue;
+}
+.input_group input {
+  width: 90%;
+}
+.input_group label {
+  position: absolute;
+  left: 1rem;
+  top: 0;
+}
+textarea {
+  width: 95%;
+}
+
+input:focus + label,
+input:valid + label,
+textarea:valid + label,
+textarea:focus + label {
+  top: -1.4rem;
+}
+
+.send {
+  border: 1px solid royalblue;
+  background: rgba(166, 126, 218, 0.094);
+  cursor: pointer;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+}
+.send:hover {
+  background: rgb(7, 19, 85);
+  color: royalblue;
+  border-color: lightpink;
+}
+
+/*?Dark Mode */
+#dark .form {
+  background: #8482913f;
+  color: white;
+}
+#dark .input_group input,
+#dark .input_group textarea {
+  border-bottom: 0.1rem solid teal;
+}
+#dark .send {
+  border: 1px solid teal;
+  color: aqua;
+  background: rgba(166, 126, 218, 0.094);
+}
+#dark .send:hover {
+  background: rgba(42, 7, 88, 0.274);
+  color: yellow;
+  border-color: orange;
+}
+#dark .bubble::after {
+  background: linear-gradient(rgb(8, 28, 70), rgb(7, 70, 70));
+}
+#dark .bubble::before {
+  background: linear-gradient(rgb(10, 57, 78), rgb(66, 4, 63));
+}
+/*?Dark Mode */
+
+@media only screen and (max-width: 800px) {
+  .form {
+    max-width: 25rem;
+    max-height: 26rem;
+  }
+  .rtlStyle .input_group label {
+    right: -5.5rem;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "menuItem1": "Library",
+  "menuItem2": "Home",
+  "menuItem3": "ContactUs",
+  "menuItem4": "favorites",
+  "menuItem5": "PlayList",
+  "menuItem6": "Hiphop",
+  "menuItem7": "Pop",
+  "contactUs": "ContactUs",
+  "contactUsName": "Name",
+  "contactUsEmail": "Email",
+  "contactUsTextArea": "Type your Message Here...",
+  "contactUsSend": "Send"
+}

@@ -1,0 +1,81 @@
+.playlist {
+  width: 100%;
+  height: 100vh;
+}
+.playlistGif {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../../../assets//picture/playListGif.gif") no-repeat center
+    center;
+  background-size: cover;
+}
+.PlayListItem {
+  z-index: 10;
+  margin-top: 5rem;
+  background: darkorange;
+  color: darkblue;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0.1rem red;
+  width: 20%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.playListContainer {
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: 3rem;
+}
+.playListContainer .col:last-child {
+  margin-bottom: 13rem;
+}
+.titlePlayList {
+  background-color: rgba(57, 167, 204, 0.623);
+  font-family: vazir;
+  text-align: center;
+  position: absolute;
+  display: block;
+  z-index: 13;
+  width: 83vw;
+  top: 3.5rem;
+  /* padding-right: 7rem; */
+  margin-left: -0.7rem;
+}
+.textTitlePlayList {
+  padding-top: 1rem;
+  color: lightskyblue;
+  text-shadow: 0 0 0.1rem darkblue, 0 0 0.2rem darkblue, 0 0 0.5rem darkblue,
+    0 0 1rem darkblue;
+}
+.backButtonPlayList {
+  top: 0;
+  left: 1rem;
+  color: darkred;
+  text-decoration: none;
+  font-size: 2rem;
+  position: absolute;
+}
+.rtlStyle .titlePlayList {
+  right: 18.4%;
+}
+@media only screen and (min-width: 800px) {
+  .backButtonPlayList {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .rtlStyle .titlePlayList {
+    width: 100%;
+    right: 0;
+  }
+  .titlePlayList {
+    width: 100vw;
+    left: 0;
+  }
+  .backButtonPlayList {
+    z-index: 20;
+  }
+}

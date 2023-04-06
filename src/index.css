@@ -1,0 +1,55 @@
+@font-face {
+  font-family: vazir;
+  src: url("./assets/font/Vazir-Black.ttf");
+}
+@font-face {
+  font-family: central_bold;
+  src: url("./assets/font//CentraNo2-Bold.ttf");
+}
+@font-face {
+  font-family: central_medium;
+  src: url("./assets/font//CentraNo2-Medium.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  user-select: none;
+  user-zoom: none;
+  background-position: center center;
+}
+body {
+  overflow: hidden;
+  font-family: central_medium;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+.main_container {
+  max-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+}
+#light {
+  background: white;
+}
+#dark {
+  background: #1c1c1c;
+  color: white;
+}
+.rtlStyle {
+  font-family: "vazir";
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+@media screen and (max-width: 800px) {
+  #desktopMenu {
+    display: none;
+  }
+}
