@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# React Music Player App 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Website link - [Live Demo](https://pankaj-music.vercel.app/).
 
 ## Available Scripts
 
