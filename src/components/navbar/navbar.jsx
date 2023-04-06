@@ -30,7 +30,7 @@ const Navbar = () => {
         <ul className="w-100 d-flex align-items-center justify-content-between">
           <li>
             <h2 style={{ fontFamily: "central_bold" }} className="mx-3">
-              Music Player
+              Music
             </h2>
           </li>
           <li className="search_box">
